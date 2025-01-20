@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "aa6b9c4a-cdc9-4280-8b63-5e5becb4cc70",
+		"_postman_id": "c2fa4fa4-df19-48d9-b231-973343ca9eef",
 		"name": "Today Training",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "34252610"
@@ -15,6 +15,12 @@
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"check staus\",function()\r",
+							"\r",
+							"{\r",
+							"    pm.response.to.have.status(\"OK\");\r",
 							"});"
 						],
 						"type": "text/javascript",
